@@ -1,4 +1,4 @@
-class PersonaP
+class Persona
 {
    private int edad, genero,estudios,ocupacion, idioma, ingresos, casa;
    private String colonia, delegacion;
