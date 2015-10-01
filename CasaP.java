@@ -1,5 +1,5 @@
 class CasaP {
-   private DireccionP dir;
+   private DireccionP dir=new DireccionP();
    PersonaP []casas;
    int indice,noper,contperso=0;
    public void CasasCap(int per)   {
