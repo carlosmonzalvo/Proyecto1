@@ -1,4 +1,4 @@
-class DireccionP{
+class Direccion{
 	private String delegacion,colonia;
 
         public void CapturaDireccion(){
