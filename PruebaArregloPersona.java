@@ -1,4 +1,4 @@
-class ArregloPersona{
+class PruebaArregloPersona{
   
   //Atributos
   int indice;
