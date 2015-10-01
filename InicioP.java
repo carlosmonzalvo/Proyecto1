@@ -1,35 +1,21 @@
-class InicioP
-{
-   static CasaP cas = new CasaP();
-   static Estadisticas estadis = new Estadisticas();
-   static int p;
-   public static int listaMenu()
-   {
-      int op;
-      do 
-      {
-         op =Teclado.LeeEntero("1)Iniciar censo.\n2)Consultar estadisticas.\n3)Salir.\n");
-         if (op>3 || op<1)
-            System.out.println("Error, opción no valida.");
-      }
-      while(op>3);
-      return op; 
-   }
-   public static void main(String []args)
-   {
-      int opc;
-      do 
-      {
-         opc = listaMenu();
-         switch(opc)
-         {
-            case 1: p=Teclado.LeeEntero("¿Cuántas casas serán?");
-                    cas.CasasCap(p);
-               break;
-            case 2: estadis.listaMenu();
-               break;
-         }
-      }
-      while(opc>3);
-   }
+class InicioP {
+ 
+   public static void main(String []args)   {
+      int opcion,p;
+      CasaP cas = new CasaP();
+      Menu menu=new Menu();
+      //EstadisticasP e=new EstadisticasP();
+      do {
+         opcion=menu.Menu("1)Iniciar censo.\n2)Consultar estadisticas.\n3)Salir.\n",3);
+         switch(opcion) {
+            case 1:System.out.println("Iniciando...");
+                   p=Teclado.LeeEntero("Dame el numero total de casas para el censo: ");
+                   cas.CasasCap(p);
+                  break;
+            //case 2:e.CalculaEstadisticas();
+              //    break;
+                  }
+      } while(opcion!=3);
 }
+}
+//Para que corra necesitan la clase menu que nos dio la maestra
