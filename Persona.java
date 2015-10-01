@@ -4,7 +4,7 @@ class Persona
    private String colonia, delegacion;
    
    //Método Contructor
-   public void PersonaP(int ed, int gen, int std, int ocp, int idiom, int ingr, int cas, String col, String del){
+   public void Persona(int ed, int gen, int std, int ocp, int idiom, int ingr, int cas, String col, String del){
       edad = ed;
       genero = gen;
       ocupacion = ocp;
