@@ -16,7 +16,7 @@ class Persona
       delegacion = del;
    }
  
- //Métodos modificadores .. SETTERS INVESTIGUEN EN INTERNET DIOS MIO!
+ //Métodos modificadores .. SETTERS!
  public void setEdad(ed){
     edad = ed;
  }
