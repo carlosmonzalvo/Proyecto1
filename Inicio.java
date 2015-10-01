@@ -1,4 +1,4 @@
-class InicioP {
+class Inicio {
  
    public static void main(String []args)   {
       int opcion;
