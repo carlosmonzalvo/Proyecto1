@@ -5,9 +5,14 @@ class PruebaArregloPersona{
   Persona []personas;
   
   //contructor
-  ArregloPersona(tam){
+  
+  PruebaArregloPersona(tam){
     personas = new Persona[tam];
   }
+  
+  //metodos
+  
+  
   
 
 
