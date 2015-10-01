@@ -77,7 +77,7 @@
 class PersonaP
 {
    int[] edad, estudios;
-   int personas=0,generomas=0,generofem=0,ocupacion=0,idioma=0,estudiantes=0,trabajadores=0,per;
+   int personas=0,generomas=0,generofem=0,ocupacion=0,idioma,contidioma=0,estudiantes=0,trabajadores=0,per;
    public void PersonaP(int per)
    {
       edad = new int[per];
@@ -124,11 +124,11 @@ class PersonaP
       int x;
       for(int i=1;i<per;i++)
       {
-         Teclado.LeeEntero("El integrante "+(i+1)+" además del Español, ¿habla algun otro idioma?\n1.-Si\n2.-No\n ");
+         idioma=Teclado.LeeEntero("El integrante "+(i+1)+" además del Español, ¿habla algun otro idioma?\n1.-Si\n2.-No\n ");
          if(idioma==1)
          {
-            idioma=idioma+1;
             x=Teclado.LeeEntero("¿Cuantos?: ");
+            contidioma=contidioma+1;
          }
       }
    }
