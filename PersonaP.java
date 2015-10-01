@@ -1,31 +1,64 @@
-class PersonaP
+class Persona
 {
-   private int edad, genero,estudios,ocupacion, idioma;
-   public void CapturaPersona(){
-      LeeEdad();
-      LeeGenero();
-      LeeEstudios();
-      LeeOcupacion();
+   private int edad, genero,estudios,ocupacion, idioma, ingresos, casa;
+   private String colonia, delegacion;
+   
+   //Método Contructor
+   public void PersonaP(int ed, int gen, int std, int ocp, int idiom, int ingr, int cas, String col, String del){
+      edad = ed;
+      genero = gen;
+      ocupacion = ocp;
+      estudios = std;
+      idioma = idiom;
+      ingresos = ingr;
+      casa = cas;
+      colonia = col;
+      delegacion = del;
    }
-   public void LeeEdad(){
-      edad=Teclado.LeeEntero("Edad: ");
-   }
-   public void LeeGenero(){
-      genero=Teclado.LeeEntero("Usted es: \n1.-Hombre\n2.-Mujer\n");
-   }
-   public void LeeEstudios(){
-      estudios=Teclado.LeeEntero("Nivel maximo de estudios:\n1.-Primaria\n2.-Secundaria\n3.-Preparatoria\n4.-Licenciatura\n5.-Otro\n ");
-   }
-   public void LeeOcupacion(){
-      ocupacion=Teclado.LeeEntero("¿A que se dedica?\n1.-Estudia\n2.-Trabaja\n");
-   }
-   public void Listar(){
-      System.out.print(edad+"\t"+genero+"\t"+estudios+"\t"+ocupacion);
-   }
-   public void LeeIdioma(){
-      int x;
-      idioma=Teclado.LeeEntero("Aparte del Español, ¿hablas algun otro idioma?\n1.-Si\n2.-No\n ");
-      if(idioma==1)
-      x=Teclado.LeeEntero("¿Cuantos?: ");
-   }
+ 
+ //Métodos modificadores .. SETTERS INVESTIGUEN EN INTERNET DIOS MIO!
+ public void setEdad(ed){
+    edad = ed;
+ }
+ public void setIdioma(idiom){
+    idioma = idiom
+ }
+ public void setGenero(gen){
+    genero = gen;
+ }
+ public void setOcupacion(ocp){
+    ocupacion = ocp;
+ }
+  public void setEstudios(std){
+    estudios = std;
+ }
+ public void setIngresos(ingr){
+    ingresos = ingr;
+ }
+ public void setCasa(cas){
+    casa = cas;
+ }
+ public void setColonia(col){
+    colonia = col;
+ }
+ public void setDelegacion(del){
+    delegacion = del;
+ }
+  
+ /*
+ string getData(){
+ return [1,2,3,4,5,6,7,8]
+ }
+ (STRING, [INT])
+ carlos.getData.0
+ 
+ printf (carlos.getData()[5]);
+ int(String)
+ 
+ Tuplas en Java
+ Casting Int- String
+ Casting String -Int
+ 
+ */ 
+   
 }
