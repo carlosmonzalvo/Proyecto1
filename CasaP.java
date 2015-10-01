@@ -2,7 +2,7 @@
 class CasaP
 {
    private DireccionP dir;
-   int indice, personas;
+   int indice, sueldo;
    PersonaP []casas= new PersonaP[100];
    public void CasasCap()
    {
@@ -10,6 +10,10 @@ class CasaP
       {
          casas[indice].CapturaPersona();
          dir.CapturaDireccion();
+         LeeSueldo();
       }
+   }
+   public void LeeSueldo(){
+   sueldo=Teclado.LeeEntero("Cual es el ingreso total de la casa: ");
    }
 }
