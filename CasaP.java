@@ -1,38 +1,18 @@
-
-/*class CasaP
-{
-   private DireccionP dir;
-   int indice;
-   double sueldo;
-   PersonaP []casas= new PersonaP[100];
-   public void CasasCap()
-   {
-      for(indice=0;indice<casas.length;indice++)
-      {
-         casas[indice].CapturaPersona();
-         dir.CapturaDireccion();
-         LeeSueldo();
-      }
-   }
-   public void LeeSueldo(){
-   sueldo=Teclado.LeeDouble("Cual es el ingreso total de la casa: ");
-   }
-}
-*/
-class CasaP
-{
+class CasaP {
    private DireccionP dir;
    PersonaP []casas;
    int indice,noper,contperso=0;
-   public void CasasCap(int per)
-   {
+   public void CasasCap(int per)   {
       casas= new PersonaP[per];
+      casas[indice]=new PersonaP();
       System.out.println("Hola");
-      for(indice=0;indice<per;indice++)
-      {  
-         noper=Teclado.LeeEntero("¿Cuántas personas hay en el hogar?");
+      for(indice=0;indice<per;indice++)      {  
+         noper=Teclado.LeeEntero("¿Cuántas personas hay en el hogar ["+(indice+1)+"]?");
+         
          casas[indice].PersonaP(noper);
+         dir.CapturaDireccion();
          contperso=contperso+noper;
+         
       }
    }
 }
