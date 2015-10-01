@@ -15,46 +15,46 @@ class Estadisticas
         }while(opcion>15 || opcion<1);
         return opcion;
     }
-       public PromIngresos()
+    public PromIngresos() //Promedio de ingresos de los hogares
     {
     }
-    public PromNivelEst()
+    public PromNivelEst() // Saber el indice de analfabetismo
     {
     }
-    public PorcenIdioma()
+    public PorcenIdioma() // Posiblilidad de salir al extranjero
     {
     }
-    public PerVieja()
+    public PerVieja() // Indice de edad maxima por hogar
     {
     }
-    public PerJoven()
+    public PerJoven() // Indice de edad minima por hogar
     {
     }
-    public PorcEstudia()
+    public PorcEstudia() // Saber porcentaje de perosonas que Estudian
     {
     }
-    public PorcTrabaja()
+    public PorcTrabaja() // Saber porcentaje de personas que Trabajan
     {
     }
-    public PromEdad()
+    public PromEdad() // %pais, saber si es una pais joven o viejo
     {
     }
-    public PerColonia()
+    public PerColonia() // Saber el porcentaje por colonia
     {
     }
-    public PerDelegacion()
+    public PerDelegacion() // Saber porcentaje por delegacion
     {
     }
-    public PorcMujer()
+    public PorcMujer() // Saber porcentaje de Hombres y mujeres
     {
     }
-    public PorcHombre()
+    public PorcHombre() // Saber porcentaje de Hombres y mujeres
     {
     }
-    public PorcPropia()
+    public PorcPropia() // Saber porcentaje de personas que tienen cassa propia o rentan
     {
     }
-    public PorcRenta()
+    public PorcRenta() // Saber porcentaje de personas que tienen cassa propia o rentan
     {
     }
 }
