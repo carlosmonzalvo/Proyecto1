@@ -8,7 +8,7 @@ class PersonaP {
       edad = new int[per];
       estudios = new int[per];
       personas=personas+per;
-      LeeEdad();
+      LeeEdad(per);
       LeeGenero();
       LeeEstudios();
       LeeOcupacion();
@@ -16,7 +16,7 @@ class PersonaP {
       CapturaIngresos();
       return 1;
    }
-   public void LeeEdad()
+   public void LeeEdad(int per)
    {
       for(int i=0;i<per;i++)
       {
