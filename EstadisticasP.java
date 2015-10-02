@@ -1,8 +1,8 @@
-class Estadisticas
+class EstadisticasP
 {
    CasaP person = new CasaP();
    PersonaP per = new PersonaP();
-   public int listaMenu()
+   public int CalculaEstadisticas()
    {
       int opcion;
       do
@@ -60,7 +60,7 @@ class Estadisticas
     public void PorcenIdioma()
     {
     }
-    public float PerVieja()
+    /*public float PerVieja()
     {
       int i,prom=0,cont=0;
       for(i=0;i<person.indice;i++)
@@ -68,6 +68,16 @@ class Estadisticas
          prom=prom+(per.edad[per.edad.length-1]);
       }
       return(prom=prom/i);
+    }*/
+    public float PerVieja()
+    {
+      int i,prom=0,cont=0;
+      for(i=0;i<=person.indice;i++)
+      {
+         prom=prom+(person.casas[i].edad[per.edad.length-1]);
+      }
+      prom=prom/i-1;
+      return prom;
     }
     public float PerJoven()
     {
