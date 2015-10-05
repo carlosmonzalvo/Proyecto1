@@ -48,8 +48,10 @@ class EstadisticasP
     {
       int i;
       double prom=0;
+      System.out.println(person.indice);
       for(i=0;i<person.indice;i++)
       {
+         
          prom=prom+(per.ingresos);
       }
       return(prom=prom/i);
