@@ -105,8 +105,12 @@ class EstadisticasP
       }
       return(prom=prom/i);
     }
-    public void PorcEstudia()
-    {
+    public void PorcEstudia(){
+      int i, acum;
+      for (i=0; i<=person.indice; i++) {
+        acum = acum + person.casas[i].estudios.length;
+      }
+      System.out.println("Personas que estudian: " + acum);
     }
     public void PorcTrabaja()
     {
